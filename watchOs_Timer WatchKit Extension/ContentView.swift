@@ -47,12 +47,20 @@ struct SecondView : View{
     @State var timerValue = 1
     
     var body: some View{
+        VStack{
         if timerValue > 0 {
-            VStack{
+           
                 Text("Time remaining")
                     .font(.system(size: 14))
                 Text("\(timerValue)")
                     .font(.system(size: 40))
+                    .onAppear(){
+                        Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true){ (timer) in
+                            if self.timerValue > 0 {
+                                self.timerValue -= 1
+                            }
+                        }
+                    }
                 Text("seconds")
                     .font(.system(size: 14))
                 Button(action: {
@@ -63,7 +71,6 @@ struct SecondView : View{
                         
                     }
                 )
-            }
             
         } else {
             Button(action: {
@@ -72,6 +79,7 @@ struct SecondView : View{
                 Text("Cancel")
                     .foregroundColor(.green)
             })
+        }
         }
     }
 }
