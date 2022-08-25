@@ -97,6 +97,7 @@
 		AC867B4C28B7BAFB002163A8 /* watchOs_TimerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = watchOs_TimerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC867B5028B7BAFB002163A8 /* watchOs_TimerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = watchOs_TimerUITests.swift; sourceTree = "<group>"; };
 		AC867B5228B7BAFB002163A8 /* watchOs_TimerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = watchOs_TimerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AC867B6728B7C5D4002163A8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +128,7 @@
 		AC867B1228B7BAFA002163A8 = {
 			isa = PBXGroup;
 			children = (
+				AC867B6728B7C5D4002163A8 /* README.md */,
 				AC867B2128B7BAFA002163A8 /* watchOs_Timer WatchKit App */,
 				AC867B2C28B7BAFB002163A8 /* watchOs_Timer WatchKit Extension */,
 				AC867B4528B7BAFB002163A8 /* watchOs_TimerTests */,
