@@ -22,6 +22,9 @@ struct ContentView: View {
             Text("5").tag(5)
             Text("10").tag(10)
             Text("15").tag(15)
+            Text("20").tag(20)
+            Text("25").tag(25)
+            Text("30").tag(30)
 
         }
             NavigationLink(
@@ -44,7 +47,32 @@ struct SecondView : View{
     @State var timerValue = 1
     
     var body: some View{
-        Text("second View")
+        if timerValue > 0 {
+            VStack{
+                Text("Time remaining")
+                    .font(.system(size: 14))
+                Text("\(timerValue)")
+                    .font(.system(size: 40))
+                Text("seconds")
+                    .font(.system(size: 14))
+                Button(action: {
+                        self.shownSecondScreen = false
+                    }, label: {
+                        Text("Cancel")
+                            .foregroundColor(.red)
+                        
+                    }
+                )
+            }
+            
+        } else {
+            Button(action: {
+                self.shownSecondScreen = false
+            }, label: {
+                Text("Cancel")
+                    .foregroundColor(.green)
+            })
+        }
     }
 }
 
